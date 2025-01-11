@@ -1,0 +1,29 @@
+Frontend :
+
+1. dropdown component to select a product
+2. add your review component (textbox, submit button, clear button)
+3. most common tags component (show tags stacked horizontally)
+4. most common tags pie chart
+5. overall sentiments graph (as on amazon)
+6. overall sentiments pie chart
+7. all comments component (sorted by timestamp desc, scrollable)
+8. show similar products or customers also bought this
+
+
+Backend :
+
+1. we'll need a simple database to store all this information so that it is persisted. You can pick sqlite or duckdb or something that will easily go with python and fastapi
+2. create APIs using FastAPI for the CRUD operations and integrate it with streamlit and db
+3. create a sentiment analysis model with some thresholds and define some base sentiments.
+4. integrate the sentiment analysis model with the APIs
+5. create a named entity recognition based NLP model for generating most common tags and generate clusters of the stored review comments according to that
+6. integrate the NLP model with the APIs
+7. create a recommender system model which suggests a user some more products according to his history.
+8. integrate the recommender model with the APIs
+
+
+DB :
+
+1. Create a Database called Store
+2. Create Tables called Product, User, and maybe Comments (if required), and anything else according to you
+3. Set up datatypes according to you and integrate to backend

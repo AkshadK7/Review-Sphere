@@ -23,6 +23,13 @@ _A dynamic review management platform integrating NLP-powered sentiment analysis
 
 ---
 
+## Requirements
+
+- Python 3.7+
+- Libraries: `sqlite`, `uvicorn`, `fastapi`, `streamlit`, `spacy`, `scikit-learn`
+
+---
+
 ## Tech Stack
 
 ### **Backend**
@@ -42,7 +49,7 @@ _A dynamic review management platform integrating NLP-powered sentiment analysis
 ## Folder Structure
 
 ````plaintext
-ReviewSphere/
+Review-Sphere/
 │
 ├── backend/
 │   ├── app/
@@ -60,34 +67,47 @@ ReviewSphere/
 │
 └── store.db                     # SQLite database
 
+````
 ---
 
-## Setup Instructions
+## Installation
 
 ### **1. Backend Setup**
-1. Navigate to the `backend` directory:
+1. Create a virtual environment
+      ```bash
+      conda create --name env_name
+      conda activate env_name
+      ```
+
+2. Navigate to the `backend` directory:
    ```bash
    cd backend
-2. Install dependencies:
+   ```
+3. Install dependencies:
    ```bash
     pip install -r requirements.txt
-3. Start the FastAPI server:
+    ```
+4. Start the FastAPI server:
    ```bash
     uvicorn app.main:app --reload
+    ```
 
 ### **2. Frontend Setup**
 1. Navigate to the `frontend` directory:
    ```bash
     cd frontend
+    ```
 2. Install dependencies:
    ```bash
     pip install -r requirements.txt
+    ```
 3. Run the Streamlit app:
    ```bash
     streamlit run app.py
+    ```
 
 ### **3. Using the Application**
-- Open your browser at the URL provided by Streamlit (default is [http://localhost:8501](http://localhost:8501)).
+- Open your browser at the URL provided by Streamlit (default :  [http://localhost:8501](http://localhost:8501)).
 - Select a product from the dropdown, submit reviews, and explore visualizations for sentiment analysis, tags, and clusters.
 - View personalized recommendations for similar products.
 
@@ -113,5 +133,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-Enjoy Reviewing the world of Natural Language Processing! 🚀
+Enjoy Reviewing the world of Recommendations! 🚀
 ````
